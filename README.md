@@ -1,6 +1,8 @@
 # Processing the Bedmap3 source data collection
 ## [Antarctic ice thickness and bed topography / bed elevation observations]
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23356503.svg)](https://doi.org/10.5281/zenodo.23356503)
+
 This repository contains an end-to-end **Python preprocessing pipeline** for the **Bedmap3** source data collection (all standardised csv files), as used in [Pritchard et al. 2025](https://www.nature.com/articles/s41597-025-04672-y) (i.e. the Bedmap3 map), and described in [Fremand et al. 2023](https://essd.copernicus.org/articles/15/2695/2023/), (i.e. the data paper).
 
 ### Inputs
