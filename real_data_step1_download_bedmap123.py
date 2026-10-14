@@ -16,7 +16,7 @@ downloader = "wget"
 
 # WARNING: This script will create new directories and download large amounts of data
 # CHANGE THIS AS NEEDED, specifiying your (full) local path to an empty data folder or a (not yet existing) folder that you want to download the data into. The following is an example:
-path_to_bedmap_data_folder = "/home/kim/data/bedmap_raw_data"
+path_to_bedmap_data_folder = "/Users/kim.bente/DATA/bedmap_raw_data"
 
 # Subdirectories for different Bedmap versions
 path_to_bedmap1_data_folder = os.path.join(path_to_bedmap_data_folder, "bedmap1_raw_data")

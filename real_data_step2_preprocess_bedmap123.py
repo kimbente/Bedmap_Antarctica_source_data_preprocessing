@@ -56,7 +56,7 @@ region_y_max = -700_000
 ################################# 
 
 # CHANGE THIS TO YOUR PATH, same as in the step1 download script
-path_to_bedmap_data_folder = "/home/kim/data/bedmap_raw_data"
+path_to_bedmap_data_folder = "/Users/kim.bente/DATA/bedmap_raw_data"
 
 # paths to subfolders
 path_to_bedmap1_data_folder = os.path.join(path_to_bedmap_data_folder, "bedmap1_raw_data")
@@ -124,6 +124,9 @@ for v, (csv_list, folder_path) in enumerate(zip(list_of_all_versions, paths_to_d
         # Rename columns to short names
         # NOTE: trajectory_id and trace_id combined can serve as a unique identifier for each measurement point, which can be useful for tracking data provenance and for potential future analyses.
         df.columns = ["lon", "lat", "s", "t", "b", "trajectory_id", "trace_id"]
+
+        # Force float so files where a column is all -9999 (read as int64) can still take float values
+        df[["s", "t", "b"]] = df[["s", "t", "b"]].astype("float64")
 
         # Mark where bedrock elevation is inferred (as this is approximately true)
         df["b_inferred"] = False

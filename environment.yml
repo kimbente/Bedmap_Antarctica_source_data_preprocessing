@@ -1,0 +1,9 @@
+name: preprocess_bedmap_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pandas>=2.0
+  - pyproj>=3.6
+  # command-line tools used by the download script (subprocess calls)
+  - unzip

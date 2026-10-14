@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this preprocessing pipeline, please cite it as below."
+title: "Processing the Antarctic Bedmap source data collection"
+version: 1.0.0
+date-released: 2026-10-14
+authors:
+  - family-names: Bente
+    given-names: Kim
+    orcid: "https://orcid.org/0000-0002-7126-7736"
+license: MIT
+repository-code: "https://github.com/kimbente/Bedmap_Antarctica_source_data_preprocessing"
+keywords:
+  - Bedmap
+  - radioglaciology
+  - ice thickness
+  - bed topography
+  - Antarctica

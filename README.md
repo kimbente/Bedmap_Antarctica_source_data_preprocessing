@@ -15,6 +15,11 @@ This repository contains an end-to-end **Python preprocessing pipeline** for the
 
 The following downloading and preprocessing pipeline is fully **reproducible**.
 
+### Step 0 - create environment
+
+- `conda env create -f environment.yml`
+- `conda activate preprocess_bedmap_env`
+
 ### Step 1 - Download Bedmap
 - In `real_data_step1_download_bedmap123.py` replace `path_to_bedmap_data_folder` with your own local path. Run the python script with `python real_data_step1_download_bedmap123.py` from the terminal. This will automatically download, unzip, and organise all **Bedmap** data files. Specify the downloader (wget or curl) based on your operating system. The script has only been tested on os. If you have trouble with this script or you are not on os, also see this [BAS resource from the Geophyscis Book by the UK Polar Centre](https://antarctica.github.io/PDC_GeophysicsBook/BEDMAP/Downloading_the_Bedmap_data.html) for useful information.
 - <p style="color:red;"><strong>WARNING:</strong> This script downloads 11 GB of data!</p>
